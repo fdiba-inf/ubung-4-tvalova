@@ -16,14 +16,11 @@ public class ArrayInput {
       System.out.print("Numbers: [");
 
       for (int index = 0; index < array.length; index++) {
-        if (index + 1 != array.length && index != 0) {
-          System.out.print(" " + array[index] + ",");
-        } else if (index == 0) {
-          System.out.print(array[index] + ",");
-        } else if (index + 1 == array.length) {
-          System.out.print(" " + array[i]);
-        }
+        if (index + 1 != array.length) {
+          System.out.print(array[index] + ", ");
+      } else {
+        System.out.print(array[index] + "]");
       }
-    System.out.print("]")
+  }
   }
 }

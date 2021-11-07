@@ -6,14 +6,14 @@ public class MinIndex {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
     int size = input.nextInt();
-    float arr[] = new float[size];
-    float min = 0;
+    int arr[] = new int[size];
+    int min = 0;
     for(int i = 0; i < arr.length; i++) {
-      arr[i] = input.nextFloat();
-      if (min > arr[i]) {
-        min = arr[i];
+      arr[i] = input.nextInt();
+      if (arr[min] > arr[i]) {
+        min = i;
       }
     }
-    System.out.println("Min number: " + min);
+    System.out.println("Min index: " + min);
   }
 }

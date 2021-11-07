@@ -9,12 +9,14 @@ public class  ArrayOutput {
     int length = input.nextInt();
     int[] array = new int[length];
 
-    for (int i = 0; 1 < length; i++) {
+    for (int i = 0; i < length; i++) {
       array[i] = input.nextInt();
     }
 
     for (int i = 0; i < array.length; i++) {
-      System.out.println();
+      if (i != 0) {
+        System.out.println();
+      } 
       for (int j = 0; j < i; j++) {
         System.out.print(" ");
       }
